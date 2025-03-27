@@ -9,6 +9,6 @@ TARGET_URL = "https://github.com/Akshit2807/e_waste_app/releases/latest"
 def redirect_to_github():
     return RedirectResponse(url=TARGET_URL, status_code=302)
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# Required for Vercel
+from mangum import Mangum
+handler = Mangum(app)
