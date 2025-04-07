@@ -32,3 +32,8 @@ def show_clicks():
     </html>
     """
     return HTMLResponse(content=html_content)
+
+
+@app.get("/ping")
+def ping():
+    return {"message": "caffiene"}
