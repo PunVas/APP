@@ -5,7 +5,7 @@ import html
 
 app = FastAPI()
 
-TARGET_URL = "https://youtu.be/kQ9PemsFbrU"
+TARGET_URL = "https://youtu.be/3V-pWlHvenI"
 ip_clicks = defaultdict(int)
 
 @app.get("/")
